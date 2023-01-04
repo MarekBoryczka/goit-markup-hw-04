@@ -18,19 +18,12 @@ body {
 }
 /*  font-family: 'Raleway', sans-serif;  */
 
-.header_container {
-  max-width: 1600px;
-  border-bottom: 1px solid #ececec;
-  margin-left: 0px;
-}
-
 .span_logo,
 .header_logo,
 .footer_logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 35.96px;
   text-decoration: none;
 }
 
@@ -40,34 +33,65 @@ body {
 
 .header_logo {
   color: var(--main-color);
+  margin-right: 93px;
 }
 
 .footer_logo {
   color: var(--text_on_background-color);
 }
 
-.body-header {
+.header_border {
+  border-bottom: 1px solid #ececec;
+}
+
+.header_container {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.header_list_1,
-.header_list_2 {
+.body-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+.header_list_1 {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_list_2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
 }
 
 .header_list_1 > .item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 46px;
 }
 
 .header_list_2 > .item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
-.header_nav,
-.header_contact {
+.header_nav {
   color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header_contact {
+  color: var(--lorem-ipsum-color);
+  font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -82,8 +106,8 @@ body {
 
 .filters_container {
   max-width: 1200px;
-  padding: 74px 0px 24px 0px;
-  margin-left: 215px;
+  padding: 94px 0px 24px 0px;
+  margin: 0px auto;
 }
 
 .main_filters {
@@ -95,7 +119,7 @@ body {
 .main_filter {
   color: var(--main-color);
   background-color: var(--filter_background-color);
-  height: 38px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -112,10 +136,16 @@ body {
   background-color: var(--brand-color);
 }
 
-.main_background {
-  background-color: var(--background-color);
-  width: 1600px;
+.main_section_1 {
   height: 600px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  padding: 94px 0px;
+}
+
+.main_background {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,6 +159,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  text-align: center;
   text-transform: uppercase;
   padding: 0px;
   margin: 0px;
@@ -149,35 +180,35 @@ body {
   cursor: pointer;
 }
 
-.main_advantages {
+.main_div_lorem {
   max-width: 1200px;
-  height: 581px;
-  padding: 0px;
-  margin-left: 215px;
-  display: block;
+  padding: 94px 0px;
+  margin: 0px auto;
 }
 
-.main_list_lorem {
-  margin: 0px;
-  padding: 0px;
-}
-
-.main_lorem_ipsum {
+.list_lorem {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px;
   margin: 0px;
+}
+
+.list_lorem > .item_lorem:not(:last-child) {
+  padding-right: 30px;
 }
 
 .item_lorem p {
   color: var(--lorem-ipsum-color);
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .our_advantages {
-  display: block;
+  max-width: 1200px;
+  padding-bottom: 94px;
+  margin: 0px auto;
 }
 
 .advantages_title {
@@ -186,51 +217,43 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  padding-bottom: 50px;
+  margin: 0px;
 }
 
 .advantages_images {
   display: flex;
   justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
 }
 
+/*
+Do zastanowienia padding
 .advantages_images > .item:not(:last-child) {
   padding-right: 30px;
-}
+}*/
 
-.main_our_team {
-  max-width: 1600px;
-  height: 648px;
+.section_our_team {
   background-color: var(--our-team-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px;
-  padding-left: 215px;
+  padding: 94px 0px;
 }
 
-.container_title {
+.container_team {
   max-width: 1200px;
+  margin: 0px auto;
 }
 
 .title_our_team {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 42.19px;
   text-align: center;
-  margin: 0px;
-  padding-bottom: 50px;
 }
 
-.group_card {
-  max-width: 1200px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.list_team {
+.cards_team {
   list-style: none;
-  background: var(--text_on_background-color);
   display: flex;
   justify-content: space-between;
   margin: 0px;
@@ -238,25 +261,23 @@ body {
 }
 
 .item_team {
-  margin: 0px;
-  padding: 0px;
-  border-right: 32px solid var(--our-team-color);
-}
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  /* material shadow v1 */
 
-.item_team img {
-  padding: 0px;
-  margin: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .item_team h3 {
   font-weight: 500;
-  background: var(--text_on_background-color);
   text-align: center;
 }
 
 .item_team p {
   color: var(--lorem-ipsum-color);
-  background: var(--text_on_background-color);
   text-align: center;
   font-weight: 400;
 }
@@ -264,7 +285,7 @@ body {
 .div_container {
   max-width: 1200px;
   padding: 0px;
-  margin-left: 215px;
+  margin: 0px auto;
 }
 
 .card-set {
@@ -276,7 +297,6 @@ body {
 }
 
 .card {
-  /*background: #ffffff;*/
   margin: 0%;
   padding: 0%;
   border: 1px solid #eeeeee;
@@ -288,23 +308,42 @@ body {
   padding-left: 24px;
 }
 
-footer {
+.footer {
   background-color: var(--background-color);
-  width: 1600px;
-  height: 252px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 215px;
+  padding: 60px 0px;
 }
 
-.div_adress {
+.footer_div {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.list_adress {
   list-style: none;
-  padding-left: 0px;
+  line-height: 24px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.list_adress:first-child {
+  padding-top: 20px;
 }
 
 .footer_adress {
   color: var(--text_on_background-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0px;
+  margin: 0px;
   font-style: normal;
   text-decoration: none;
+}
+
+.list_adress > li:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.list_adress a {
+  color: rgba(255, 255, 255, 0.6);
 }
