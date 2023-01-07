@@ -6,8 +6,6 @@
   --filter_background-color: #f5f4fa;
   --lorem-ipsum-color: #757575;
   --our-team-color: #f5f4fa;
-  --start-color: #ffeb3b;
-  --end-color: #ff5722;
 }
 
 * {
@@ -334,8 +332,22 @@ Do zastanowienia padding
 .list_client {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   padding: 0px;
   margin: 0px;
+}
+
+.border_client {
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.border_client:hover {
+  color: var(--brand-color);
 }
 
 .div_container {
