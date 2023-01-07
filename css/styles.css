@@ -83,11 +83,11 @@ body {
   margin-right: 5px;
 }
 
-.header_list_1 > .item:not(:last-child) {
+.header_list_1 > .item_list_1:not(:last-child) {
   margin-right: 46px;
 }
 
-.header_list_2 > .item:not(:last-child) {
+.header_list_2 > .item_list_2:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -112,6 +112,13 @@ body {
 .footer_adress:hover,
 .footer_adress:focus {
   color: var(--brand-color);
+}
+
+.header_contact_phone:hover,
+.header_contact_phone:focus,
+.header_contact_mail:hover,
+.header_contact_mail:focus {
+  fill: var(--brand-color);
 }
 
 .filters_container {
@@ -305,6 +312,30 @@ Do zastanowienia padding
   color: var(--lorem-ipsum-color);
   text-align: center;
   font-weight: 400;
+}
+
+.section_client {
+  padding: 94px 0px;
+}
+
+.container_client {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.title_client {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42.19px;
+  text-align: center;
+}
+
+.list_client {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 
 .div_container {
