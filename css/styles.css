@@ -237,9 +237,6 @@ body {
   margin: 0px;
 }
 
-.lorem_icon {
-}
-
 .our_advantages {
   max-width: 1200px;
   padding-bottom: 94px;
@@ -285,6 +282,8 @@ Do zastanowienia padding
   font-size: 36px;
   line-height: 42.19px;
   text-align: center;
+  padding-bottom: 32px;
+  margin: 0px;
 }
 
 .cards_team {
@@ -297,10 +296,8 @@ Do zastanowienia padding
 
 .item_team {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -315,6 +312,15 @@ Do zastanowienia padding
   color: var(--lorem-ipsum-color);
   text-align: center;
   font-weight: 400;
+}
+
+.container_team_icon {
+  width: 206px;
+  height: 44px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section_client {
@@ -332,6 +338,8 @@ Do zastanowienia padding
   font-size: 36px;
   line-height: 42.19px;
   text-align: center;
+  padding-bottom: 32px;
+  margin: 0px;
 }
 
 .list_client {
@@ -394,6 +402,7 @@ Do zastanowienia padding
 .footer_div {
   max-width: 1200px;
   margin: 0px auto;
+  display: flex;
 }
 
 .list_adress {
@@ -424,4 +433,26 @@ Do zastanowienia padding
 
 .list_adress a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer_social {
+  padding-left: 70px;
+}
+
+.footer_title {
+  color: var(--text_on_background-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer_list_icon {
+  list-style: none;
+  width: 206px;
+  height: 44px;
+  display: flex;
+  padding: 0px;
 }
