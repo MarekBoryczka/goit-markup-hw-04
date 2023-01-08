@@ -111,14 +111,14 @@ body {
 .footer_adress:focus {
   color: var(--brand-color);
 }
-/*
-.header_contact_phone:hover,
-.header_contact_phone:focus,
-.header_contact_mail:hover,
-.header_contact_mail:focus {
+
+.item_list_2:hover .header_contact_phone,
+.item_list_2:focus .header_contact_phone,
+.item_list_2:hover .header_contact_mail,
+.item_list_2:hover .header_contact_mail {
   fill: var(--brand-color);
 }
-*/
+
 .filters_container {
   max-width: 1200px;
   padding: 94px 0px 24px 0px;
