@@ -6,6 +6,7 @@
   --filter_background-color: #f5f4fa;
   --lorem-ipsum-color: #757575;
   --our-team-color: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 
 * {
@@ -260,12 +261,6 @@ body {
   margin: 0px;
 }
 
-/*
-Do zastanowienia padding
-.advantages_images > .item:not(:last-child) {
-  padding-right: 30px;
-}*/
-
 .section_our_team {
   background-color: var(--our-team-color);
   padding: 94px 0px;
@@ -323,6 +318,25 @@ Do zastanowienia padding
   align-items: center;
 }
 
+.team_bg_icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50px;
+}
+
+.team_icon {
+  fill: var(--icons-color);
+}
+
+.team_bg_icon:hover,
+.team_bg_icon:focus,
+.team_bg_icon:hover .team_icon,
+.team_bg_icon:focus .team_icon {
+  fill: var(--text_on_background-color);
+  background-color: var(--brand-color);
+}
+
 .section_client {
   padding: 94px 0px;
 }
@@ -355,12 +369,23 @@ Do zastanowienia padding
   height: 92px;
   padding-left: 32px;
   padding-right: 32px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
 .border_client:hover {
-  color: var(--brand-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--brand-color);
+}
+
+.border_client:hover .client_icon,
+.border_client:focus .client_icon {
+  fill: var(--brand-color);
+}
+
+.client_icon {
+  fill: var(--icons-color);
 }
 
 .div_container {
@@ -454,5 +479,23 @@ Do zastanowienia padding
   width: 206px;
   height: 44px;
   display: flex;
+  justify-content: space-between;
   padding: 0px;
+}
+
+.footer_bg_icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 12px;
+}
+
+.footer_bg_icon:hover,
+.footer_bg_icon:focus {
+  background: var(--brand-color);
+}
+
+.footer_icon {
+  fill: var(--text_on_background-color);
 }
